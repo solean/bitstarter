@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>BitThru</title>
+    <title>BitStarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-cons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -45,11 +45,18 @@
       /* Main body and headings */
       body {
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        background-color: #2c3e50;
+        color: white;
       }
       .heading, .subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
       }
+      
+      .navbar .brand {
+	      color: #e74c3c;
+      }
+      
       p.lead {
         padding-top: 1.5%;
         font-size: 24px;
@@ -97,6 +104,50 @@
       .footer a {
         color: #ccccff;
       }
+      
+      /* Overrides */
+      .pitch .span5 {
+	      background-color: rgba(0,0,0,0.78);
+      }
+      .progress .bar-success { 
+      	  background-image: none;
+	      background-color: #e74c3c;
+      }
+      .progress .bar-warning {
+	      background-image: none;
+	      background-color: #2c3e50;
+      }
+      .btn-success {
+	      background-image: none;
+	      background-color: #e74c3c;
+      }
+      .btn-success:hover {
+	      background-color: #95a5a6;
+      }
+      .section1 {
+	      background-color: #e74c3c;
+      }
+      p::selection {
+	      
+	  }
+      .accordion-group {
+	      border: none;
+	      border-bottom: 1px solid black;
+      }
+      .accordion-toggle {
+	      color: #e74c3c;
+      }
+      .accordion-toggle:hover {
+	      color: #95a5a6;
+	      text-decoration: none;
+      }
+      .accordion-inner {
+	      border-top: black;
+      }
+      .navbar .nav > li > a {
+	      color: #e74c3c;
+      }
+
     </style>
   </head>
   <body>
@@ -111,7 +162,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">BitThru</a>
+          <a class="brand" href="#">BitStarter</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -174,8 +225,8 @@
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 2%;"></div>
-              <div class="bar bar-warning" style="width: 98%;"></div>
+              <div class="bar bar-success" style="width: 40%;"></div>
+              <div class="bar bar-warning" style="width: 60%;"></div>
             </div>
           </div>
           <div class="span6 offset3 order">
@@ -203,7 +254,7 @@
         </div>
         <div class="span5 copy">
           <p>
-            Thread wants to be a new, smarter way of storing, sharing, and syncing links. Chrome bookmark syncing (currently the best way of storing links across devices) works fine as far as storing Chrome bookmarks, but doesn't work if you want to save links from other browsers, mobile apps etc. Imagine tapping a link in the Twitter app on your phone and immediately having that link in the cloud on Thread, synced across all of your devices. Of course, Thread will make it possible to sort and organize your links in whatever way you please, and integrated reminders will make sure you read that article later once you've finished your work. We hope to make sharing links with friends, family, and coworkers as simple and hassle-free as possible.
+            Thread wants to be a new, smarter way of storing, sharing, and syncing links. Imagine tapping a link in the Twitter app on your phone and immediately having that link in the cloud on Thread, synced across all of your devices. Of course, Thread will make it possible to sort and organize your links in whatever way you please, and integrated reminders will make sure you read that article later once you've finished your work. We also hope to make sharing links with friends, family, and coworkers as simple and elegant as possible.
         </div>
       </div>
 
