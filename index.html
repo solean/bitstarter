@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,400' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
     <style type="text/css">
 
@@ -44,12 +44,24 @@
 
       /* Main body and headings */
       body {
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-        background-color: #2c3e50;
+        font-family: 'Raleway', Helvetica, Arial, sans-serif;
+        background-image: linear-gradient(bottom, rgb(255,102,0) 0%, rgb(155,33,255) 100%);
+background-image: -o-linear-gradient(bottom, rgb(255,102,0) 0%, rgb(155,33,255) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(255,102,0) 0%, rgb(155,33,255) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,102,0) 0%, rgb(155,33,255) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(255,102,0) 0%, rgb(155,33,255) 100%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(255,102,0)),
+	color-stop(1, rgb(155,33,255))
+);
         color: white;
       }
       .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        font-family: 'Raleway', Helvetica, Arial, sans-serif;
         text-align: center;
       }
       
@@ -71,7 +83,7 @@
       .pitch {
         padding: 2.5% 0%;
       }
-      .order {
+      .order { 
         padding: 2% 0%;
       }
       .actions {
@@ -83,6 +95,7 @@
       }
       .statistics h3, .statistics p {
         color: white;
+        font-family: Helvetica;
       }
 
       /* Marketing Copy and Footer */
@@ -111,7 +124,7 @@
       }
       .progress .bar-success { 
       	  background-image: none;
-	      background-color: #e74c3c;
+	      background-color: #2ecc71;
       }
       .progress .bar-warning {
 	      background-image: none;
@@ -125,7 +138,7 @@
 	      background-color: #95a5a6;
       }
       .section1 {
-	      background-color: #e74c3c;
+	      /* background-color: #e74c3c; */
       }
       p::selection {
 	      
@@ -135,7 +148,7 @@
 	      border-bottom: 1px solid black;
       }
       .accordion-toggle {
-	      color: #e74c3c;
+	      color: black;
       }
       .accordion-toggle:hover {
 	      color: #95a5a6;
@@ -214,7 +227,7 @@
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
+          <img class="img" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons. -->
@@ -280,7 +293,7 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
+          <img class="img" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
         <div class="span5 copy">
           <p>
@@ -295,7 +308,7 @@
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
+          <img class="img" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
       </div>
 
